@@ -19,7 +19,7 @@
         font-family: "Coolvetica";
         font-weight: 400;
         line-height: 50px;
-        margin-bottom: 6px;
+        margin-bottom: 40px;
 
         &::before {
             content: "<h1>";
@@ -27,19 +27,20 @@
             color: #ffd700;
             font-size: 18px;
             position: absolute;
-            margin-top: -40px;
-            left: 15px;
+            margin-top: -25px;
+            left: -10px;
             opacity: 0.6;
+            line-height: 18px;
         }
 
         &::after {
-            content: "<h1/>";
+            content: "</h1>";
             font-family: "La Belle Aurore";
             color: #ffd700;
             font-size: 18px;
             position: absolute;
-            margin-top: 18px;
-            margin-left: 20px;
+            left: -10px;
+            bottom: 140px;
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
         }

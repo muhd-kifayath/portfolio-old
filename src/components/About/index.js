@@ -1,9 +1,20 @@
+import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import './index.scss'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPython, faJava, faAndroid, faReact } from '@fortawesome/free-brands-svg-icons'
 const About = () => {
+    const [letterClass, setLetterClass] = useState('text-animate')
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            setLetterClass('text-animate-hover')
+        }, 3000)
+
+        return () => clearTimeout(timeout)
+    }, [])
 
     return (
         <>
@@ -12,6 +23,7 @@ const About = () => {
                     <div className="text-zone">
                         <h1>
                             <AnimatedLetters
+                                letterClass={letterClass}
                                 strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
                                 idx={15}
                             />
@@ -28,6 +40,29 @@ const About = () => {
                             Open for Internships to learn and apply various technologies.
                             I am excited about the future of computer science and believe that I have a valuable contribution to make in this field.
                         </p>
+                    </div>
+
+                    <div className="stage-cube-cont">
+                        <div className="cubespinner">
+                            <div className="face1">
+                                <FontAwesomeIcon icon={faPython} color="#fff" />
+                            </div>
+                            <div className="face2">
+                                <FontAwesomeIcon icon={faJava} color="#fff" />
+                            </div>
+                            <div className="face3">
+                                <FontAwesomeIcon icon={faAndroid} color="#fff" />
+                            </div>
+                            <div className="face4">
+                                <FontAwesomeIcon icon={faReact} color="#fff" />
+                            </div>
+                            <div className="face5">
+                                <FontAwesomeIcon icon={faPython} color="#fff" />
+                            </div>
+                            <div className="face6">
+                                <FontAwesomeIcon icon={faPython} color="#fff" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
