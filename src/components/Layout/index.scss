@@ -5,11 +5,15 @@
 }
 
 .top-tags {
-    bottom: auto;
-    top: 35px;
+    height: 30px;
+    padding-top: 35px;
+    top: 0px;
 }
 
 .tags {
+    width: 100%;
+    background: #1a1f29;
+    z-index: 3;
     color: #ffd700;
     opacity: 0.6;
     position: absolute;
@@ -17,6 +21,7 @@
     left: 120px;
     font-family: "La Belle Aurore";
     font-size: 18px;
+    opacity: 1;
 }
 
 .bottom-tag-html {
@@ -28,7 +33,7 @@
     will-change: contents;
     height: 90%;
     min-height: 566px;
-    position: absolute;
+    position: block;
     opacity: 0;
     top: 5%;
     margin: 0 auto;

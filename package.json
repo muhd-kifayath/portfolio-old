@@ -21,6 +21,7 @@
     "react-on-screen": "^2.1.1",
     "react-router-dom": "^6.6.2",
     "react-scripts": "5.0.1",
+    "react-scrollspy-highlight": "^1.0.1",
     "sass": "^1.57.1",
     "web-vitals": "^2.1.4"
   },

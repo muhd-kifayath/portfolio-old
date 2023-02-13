@@ -1,4 +1,7 @@
 .home-page {
+    display: flex;
+    position: relative;
+
     .text-zone {
         position: absolute;
         left: 10%;
@@ -15,6 +18,7 @@
         font-family: "Coolvetica";
         font-weight: 400;
         line-height: 50px;
+        margin-bottom: 6px;
 
         &::before {
             content: "<h1>";
@@ -44,16 +48,23 @@
         color: #8d8d8d;
         margin-top: 20px;
         font-weight: 400;
-        font-size: 11px;
+        font-size: 13px;
         font-family: sans-serif;
         letter-spacing: 3px;
         animation: fadeIn 1s 1.8s backwards;
+        line-height: 16px;
     }
 
     p {
         color: #fff;
-        font-size: 28px;
+        font-size: 20px;
         font-family: sans-serif;
+
+        #grey {
+            color: #8d8d8d;
+            font-size: 24px;
+            font-weight: 100;
+        }
     }
 
     .flat-button {
@@ -74,5 +85,39 @@
             background: #ffd700;
             color: #333;
         }
+    }
+
+    .piczone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: "Helvetica Neue" sans-serif;
+        width: 40%;
+        max-height: 90%;
+    }
+}
+
+.dp-container {
+    display: flex;
+    background: linear-gradient(to top right, #7faeec 40%, #384a63);
+    height: 340px;
+    width: 260px;
+    border-radius: 2rem;
+    margin-left: 25%;
+
+    .my-dp {
+        height: 101%;
+        width: 101%;
+        border-radius: 2rem;
+        transform: rotate(8deg);
+        transition: 550ms;
+    }
+
+    .my-dp:hover {
+        transform: rotate(0);
     }
 }
