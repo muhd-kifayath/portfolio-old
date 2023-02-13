@@ -6,9 +6,10 @@
         position: absolute;
         left: 10%;
         transform: translateY(-50%);
-        font-family: "Helvetica Neue" sans-serif;
-        width: 40%;
-        top: 3%;
+        font-family: sans-serif;
+        width: 35%;
+        text-align: justify;
+        top: 40%;
         max-height: 90%;
     }
 
@@ -42,5 +43,10 @@
             animation: fadeIn 1s 1.7s backwards;
             opacity: 0.6;
         }
+    }
+    p {
+        font-size: 14px;
+        color: #ffffffd8;
+        font-weight: 100;
     }
 }
