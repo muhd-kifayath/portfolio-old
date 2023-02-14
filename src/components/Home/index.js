@@ -49,7 +49,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Loader type="pacman" />
+      
       </section>
     </>
   )

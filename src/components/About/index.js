@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import './index.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPython, faJava, faAndroid, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faPython, faJava, faAndroid, faReact, faGitAlt, faJsSquare } from '@fortawesome/free-brands-svg-icons'
 const About = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -45,22 +45,22 @@ const About = () => {
                     <div className="stage-cube-cont">
                         <div className="cubespinner">
                             <div className="face1">
-                                <FontAwesomeIcon icon={faPython} color="#fff" />
+                                <FontAwesomeIcon icon={faPython} width="50%" />
                             </div>
                             <div className="face2">
-                                <FontAwesomeIcon icon={faJava} color="#fff" />
+                                <FontAwesomeIcon icon={faJava} width="50%" />
                             </div>
                             <div className="face3">
-                                <FontAwesomeIcon icon={faAndroid} color="#fff" />
+                                <FontAwesomeIcon icon={faAndroid} width="50%" />
                             </div>
                             <div className="face4">
-                                <FontAwesomeIcon icon={faReact} color="#fff" />
+                                <FontAwesomeIcon icon={faReact} width="50%" />
                             </div>
                             <div className="face5">
-                                <FontAwesomeIcon icon={faPython} color="#fff" />
+                                <FontAwesomeIcon icon={faJsSquare} width="50%" />
                             </div>
                             <div className="face6">
-                                <FontAwesomeIcon icon={faPython} color="#fff" />
+                                <FontAwesomeIcon icon={faGitAlt} width="50%" />
                             </div>
                         </div>
                     </div>
