@@ -81,13 +81,13 @@
             }
         }
 
-        a.about-link {
+        #about-link {
             &:after {
                 content: "ABOUT";
             }
         }
 
-        a.contact-link {
+        #contact-link {
             &:after {
                 content: "CONTACT";
             }

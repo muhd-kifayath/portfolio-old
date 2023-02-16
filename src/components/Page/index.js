@@ -1,11 +1,11 @@
 import AnimatedLetters from '../AnimatedLetters'
 import { Link } from 'react-router-dom'
 import './index.scss'
+import Sidebar from '../Sidebar';
 import Home from '../Home'
 import About from '../About'
 import Contact from '../Contact'
 import Layout from '../Layout'
-import Loader from 'react-loaders'
 
 
 const Page = () => {
@@ -15,12 +15,12 @@ const Page = () => {
             <div className='page'>
                 <Layout className='layout-sidebar' />
                 <div class="main-content">
-                    <Home />
-                    <About path='/about' />
-                    <Contact path='/contact' />
+                    <Sidebar />
+                    <Home id="home" />
+                    <About id="about" />
+                    <Contact id="contact" />
                 </div>
             </div>
-            <Loader type="pacman" />
         </>
     )
 }
