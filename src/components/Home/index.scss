@@ -80,15 +80,15 @@
         transform: translateY(-50%);
         font-family: "Helvetica Neue" sans-serif;
         width: 40%;
-        max-height: 90%;
+        height: 90%;
     }
 }
 
 .dp-container {
     display: flex;
     background: linear-gradient(to top right, #7faeec 40%, #384a63);
-    height: 340px;
-    width: 260px;
+    height: auto;
+    max-width: 100%;
     border-radius: 2rem;
     margin-left: 25%;
 

@@ -4,7 +4,7 @@ import './index.scss'
 import LogoMK from '../../assets/images/logo-mk.png'
 import LogoSub from '../../assets/images/logo-sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser, faBars } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
@@ -12,7 +12,7 @@ const Sidebar = () => {
 
     return (
         <div className="nav-bar">
-            <a className="logo" to="/">
+            <a className="logo" href="#home">
                 <img src={LogoMK} alt="logo" />
                 <img className="sub-logo" src={LogoSub} alt="Muhd Kifayath" />
             </a>
@@ -49,6 +49,7 @@ const Sidebar = () => {
                     </a>
                 </li>
             </ul>
+            <FontAwesomeIcon icon={faBars} color="#ffd700" size="2x" className="menu-icon" />
         </div>
     )
 }
