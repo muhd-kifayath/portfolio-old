@@ -100,7 +100,7 @@
         }
     }
 
-    .menu-icon {
+    .menu-icon, .close-icon {
         display: none;
     }
 
@@ -171,9 +171,13 @@
             a svg {
                 opacity: 1 !important;
             }
+
+            &.mobile-show {
+                display: block;
+            }
         }
 
-        .menu-icon {
+        .menu-icon, .close-icon {
             display: block;
             position: absolute;
             top: 15px;

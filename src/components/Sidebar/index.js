@@ -4,11 +4,14 @@ import './index.scss'
 import LogoMK from '../../assets/images/logo-mk.png'
 import LogoSub from '../../assets/images/logo-sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faHome, faUser, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faHome, faUser, faBars, faClose } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
     const [activeNav, setActiveNav] = useState('#')
+
+    const [showNav, setShowNav] = useState(false)
+    const [showMenu, setShowMenu] = useState(true)
 
     return (
         <div className="nav-bar">
@@ -16,7 +19,7 @@ const Sidebar = () => {
                 <img src={LogoMK} alt="logo" />
                 <img className="sub-logo" src={LogoSub} alt="Muhd Kifayath" />
             </a>
-            <nav>
+            <nav className={showNav ? 'mobile-show' : ''}>
                 <a onClick={() => setActiveNav('#')} classname={activeNav === '#' ? 'active' : ''} href="#home" >
                     <FontAwesomeIcon icon={faHome} color="#ffffff" />
                 </a>
@@ -26,6 +29,7 @@ const Sidebar = () => {
                 <a onClick={() => setActiveNav('#contact')} id="contact-link" className={activeNav === '#contact' ? 'active' : ''} href="#contact" >
                     <FontAwesomeIcon icon={faEnvelope} color="#ffffff" />
                 </a>
+                <FontAwesomeIcon onClick={() => [setShowNav(false), setShowMenu(true)]} icon={faClose} color="ffd700" size="3x" className="close-icon" />
             </nav>
             <ul>
                 <li>
@@ -49,7 +53,7 @@ const Sidebar = () => {
                     </a>
                 </li>
             </ul>
-            <FontAwesomeIcon icon={faBars} color="#ffd700" size="2x" className="menu-icon" />
+            <FontAwesomeIcon onClick={() => [setShowNav(true),setShowMenu(false)]} icon={faBars} color="#ffd700" size="2x" className={showMenu ? "menu-icon" : ''} />
         </div>
     )
 }
