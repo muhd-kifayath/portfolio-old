@@ -119,3 +119,30 @@
         color: #333;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .page {
+        position: initial;
+
+    }
+
+    .contatiner {
+        position: initial;
+        height: auto;
+        min-height: auto;
+    }
+
+    .tags{
+        display: none;
+    }
+
+    h1{
+        &::before {
+            display: none;
+        }
+
+        &::after {
+            display: none;
+        }
+    }
+}

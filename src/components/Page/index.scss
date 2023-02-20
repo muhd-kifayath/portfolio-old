@@ -9,3 +9,16 @@
     height: 100%;
     overflow-y: auto; // You can use scroll too
 }
+
+@media screen and (max-width: 1024px) {
+    .page {
+        position: initial;
+
+    }
+
+    .contatiner {
+        position: initial;
+        height: auto;
+        min-height: auto;
+    }
+}

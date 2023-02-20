@@ -139,6 +139,11 @@
         height: auto;
         min-height: auto;
 
+        img {
+            height: auto;
+            width: 30px;
+        }
+
         ul, nav {
             display: none;
         }

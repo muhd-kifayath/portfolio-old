@@ -75,11 +75,11 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        right: 10%;
+        right: 0;
         top: 50%;
         transform: translateY(-50%);
         font-family: "Helvetica Neue" sans-serif;
-        width: 40%;
+        width: 50%;
         height: 90%;
     }
 }
@@ -88,9 +88,9 @@
     display: flex;
     background: linear-gradient(to top right, #7faeec 40%, #384a63);
     height: auto;
-    max-width: 100%;
+    max-width: min(80%, 260px);
     border-radius: 2rem;
-    margin-left: 25%;
+    margin-left: 0;
 
     .my-dp {
         height: 101%;
@@ -102,5 +102,73 @@
 
     .my-dp:hover {
         transform: rotate(0);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-page {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        position: relative;
+
+        .text-zone {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            left: 10%;
+            font-family: "Helvetica Neue" sans-serif;
+            width: 90%;
+            max-height: 90%;
+
+            h1 {
+                font-size: 7vw;
+                line-height: 8vw;
+                transform: none;
+                font-weight: 200;
+                margin-bottom: 10px;    
+
+            }
+            p {
+                margin-top: 1vw;
+                font-size: 4vw;
+            }
+
+            h2 {
+                font-size: 2vw;
+                letter-spacing: 50%;
+            }
+        }
+
+        .piczone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: initial;
+            top: 40%;
+            right: 0;
+            width: 50%;
+            height: inherit;
+        }
+
+        .flat-button {
+            color: #ffd700;
+            font-size: 2vw;
+            font-weight: 400;
+            letter-spacing: 3px;
+            padding: 8px 15px;
+            width: fit-content;
+            border: 1px solid #ffd700;
+            margin-top: 25vw;
+            float: none;
+            animation: fadeIn 1s 1.8s backwards;
+            white-space: nowrap;
+        
+            &:hover {
+                background: #ffd700;
+                color: #333;
+            }
+        }
     }
 }
