@@ -20,10 +20,10 @@ const Sidebar = () => {
                 <img className="sub-logo" src={LogoSub} alt="Muhd Kifayath" />
             </a>
             <nav className={showNav ? 'mobile-show' : ''}>
-                <a onClick={() => setActiveNav('#')} classname={activeNav === '#' ? 'active' : ''} href="#home" >
+                <a onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} href="#home" >
                     <FontAwesomeIcon icon={faHome} color="#ffffff" />
                 </a>
-                <a href="#about" onClick={() => setActiveNav('#about')} id="about-link" classname={activeNav === '#about' ? 'active' : ''}>
+                <a href="#about" onClick={() => setActiveNav('#about')} id="about-link" className={activeNav === '#about' ? 'active' : ''}>
                     <FontAwesomeIcon icon={faUser} color="#ffffff" />
                 </a>
                 <a onClick={() => setActiveNav('#contact')} id="contact-link" className={activeNav === '#contact' ? 'active' : ''} href="#contact" >
@@ -53,7 +53,7 @@ const Sidebar = () => {
                     </a>
                 </li>
             </ul>
-            <FontAwesomeIcon onClick={() => [setShowNav(true),setShowMenu(false)]} icon={faBars} color="#ffd700" size="2x" className={showMenu ? "menu-icon" : ''} />
+            <FontAwesomeIcon onClick={() => [setShowNav(true), setShowMenu(false)]} icon={faBars} color="#ffd700" size="2x" className={showMenu ? "menu-icon" : ''} />
         </div>
     )
 }

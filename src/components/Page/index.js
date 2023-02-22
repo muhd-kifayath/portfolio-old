@@ -11,17 +11,16 @@ import Layout from '../Layout'
 const Page = () => {
 
     return (
-        <>
-            <div className='page'>
-                <Layout className='layout-sidebar' />
-                <div class="main-content">
-                    <Sidebar />
-                    <Home id="home" />
-                    <About id="about" />
-                    <Contact id="contact" />
-                </div>
+        <div className='page'>
+            <Layout className='layout-sidebar' />
+            <div className="main-content">
+                <Sidebar />
+                <Home id="home" />
+                <About id="about" />
+                <Contact id="contact" />
             </div>
-        </>
+        </div>
+
     )
 }
 

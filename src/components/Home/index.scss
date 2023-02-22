@@ -8,7 +8,7 @@
         top: 50%;
         bottom: auto;
         transform: translateY(-50%);
-        font-family: "Helvetica Neue" sans-serif;
+        font-family: sans-serif;
         width: 40%;
         max-height: 90%;
     }
@@ -17,7 +17,7 @@
         color: #fff;
         font-size: 53px;
         font-family: "Coolvetica";
-        font-weight: 400;
+        font-weight: 800;
         line-height: 50px;
         margin-bottom: 40px;
 
@@ -77,49 +77,50 @@
         position: absolute;
         right: 0;
         top: 50%;
-        transform: translateY(-50%);
-        font-family: "Helvetica Neue" sans-serif;
         width: 50%;
         height: 90%;
+
+        .dp-container {
+            display: flex;
+            background: linear-gradient(to top right, #7faeec 40%, #384a63);
+            height: auto;
+            max-width: min(80%, 250px);
+            border-radius: 2rem;
+            margin-left: 0;
+        
+            .my-dp {
+                height: 101%;
+                width: 101%;
+                border-radius: 2rem;
+                transform: rotate(8deg);
+                transition: 550ms;
+            }
+        
+            .my-dp:hover {
+                transform: rotate(0);
+            }
+        }
     }
 }
 
-.dp-container {
-    display: flex;
-    background: linear-gradient(to top right, #7faeec 40%, #384a63);
-    height: auto;
-    max-width: min(80%, 260px);
-    border-radius: 2rem;
-    margin-left: 0;
 
-    .my-dp {
-        height: 101%;
-        width: 101%;
-        border-radius: 2rem;
-        transform: rotate(8deg);
-        transition: 550ms;
-    }
-
-    .my-dp:hover {
-        transform: rotate(0);
-    }
-}
 
 @media screen and (max-width: 768px) {
     .home-page {
-        display: flex;
-        flex-direction: column;
         box-sizing: border-box;
         position: relative;
+        display: flex;
+        flex-direction: column;
 
         .text-zone {
-            position: absolute;
+            position: relative;
             display: flex;
             justify-content: center;
             flex-direction: column;
             left: 10%;
-            font-family: "Helvetica Neue" sans-serif;
+            top: 10vh;
             width: 90%;
+            height: auto;
             max-height: 90%;
 
             h1 {
@@ -133,11 +134,13 @@
             p {
                 margin-top: 1vw;
                 font-size: 4vw;
+                margin-bottom: 1vw;
             }
 
             h2 {
                 font-size: 2vw;
                 letter-spacing: 50%;
+                margin-top: 5px;
             }
         }
 
@@ -145,11 +148,31 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            position: initial;
-            top: 40%;
-            right: 0;
-            width: 50%;
-            height: inherit;
+            position: relative;
+            top: 5vh;
+            left: 0;
+            right: auto;
+            width: 100%;
+            height: auto;
+
+            .dp-container {
+                height: auto;
+                max-width: min(65%, 200px);
+                border-radius: 2rem;
+                margin-left: 0;
+            
+                .my-dp {
+                    height: 101%;
+                    width: 101%;
+                    border-radius: 2rem;
+                    transform: rotate(8deg);
+                    transition: 550ms;
+                }
+            
+                .my-dp:hover {
+                    transform: none;
+                }
+            }
         }
 
         .flat-button {
@@ -160,7 +183,7 @@
             padding: 8px 15px;
             width: fit-content;
             border: 1px solid #ffd700;
-            margin-top: 25vw;
+            margin-top: 2vw;
             float: none;
             animation: fadeIn 1s 1.8s backwards;
             white-space: nowrap;
