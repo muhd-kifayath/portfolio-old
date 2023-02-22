@@ -20,13 +20,13 @@ const Sidebar = () => {
                 <img className="sub-logo" src={LogoSub} alt="Muhd Kifayath" />
             </a>
             <nav className={showNav ? 'mobile-show' : ''}>
-                <a onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''} href="#home" >
+                <a onClick={() => [setActiveNav('#'), setShowNav(false)]} className={activeNav === '#' ? 'active' : ''} href="#home" >
                     <FontAwesomeIcon icon={faHome} color="#ffffff" />
                 </a>
-                <a href="#about" onClick={() => setActiveNav('#about')} id="about-link" className={activeNav === '#about' ? 'active' : ''}>
+                <a href="#about" onClick={() => [setActiveNav('#about'), setShowNav(false)]} id="about-link" className={activeNav === '#about' ? 'active' : ''}>
                     <FontAwesomeIcon icon={faUser} color="#ffffff" />
                 </a>
-                <a onClick={() => setActiveNav('#contact')} id="contact-link" className={activeNav === '#contact' ? 'active' : ''} href="#contact" >
+                <a onClick={() => [setActiveNav('#contact'), setShowNav(false)]} id="contact-link" className={activeNav === '#contact' ? 'active' : ''} href="#contact" >
                     <FontAwesomeIcon icon={faEnvelope} color="#ffffff" />
                 </a>
                 <FontAwesomeIcon onClick={() => [setShowNav(false), setShowMenu(true)]} icon={faClose} color="ffd700" size="3x" className="close-icon" />
