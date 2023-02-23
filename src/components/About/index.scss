@@ -109,19 +109,28 @@
         }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .about-page {
     position: relative;
+    height: 50%;
 
     .text-zone {
       position: absolute;
       width: 80%;
       right: 10%;
+      height: auto;
     }
 
 
     .stage-cube-cont {
-      position: relative;
+      position: absolute;
+      width: 100%;
+      height: auto;
+      top: auto;
+      padding-top: auto;
+      right: 0;
+      bottom: 10px;
+      overflow: none;
 
     }
   }
