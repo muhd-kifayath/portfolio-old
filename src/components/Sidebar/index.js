@@ -31,6 +31,9 @@ const Sidebar = () => {
                 </a>
                 <FontAwesomeIcon onClick={() => [setShowNav(false), setShowMenu(true)]} icon={faClose} color="ffd700" size="3x" className="close-icon" />
             </nav>
+            <div className={showMenu ? "menu-icon" : ''}>
+                <FontAwesomeIcon onClick={() => [setShowNav(true), setShowMenu(false)]} icon={faBars} color="#ffd700" size="2x" />
+            </div>
             <ul>
                 <li>
                     <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/muhd-kifayath">
@@ -53,7 +56,6 @@ const Sidebar = () => {
                     </a>
                 </li>
             </ul>
-            <FontAwesomeIcon onClick={() => [setShowNav(true), setShowMenu(false)]} icon={faBars} color="#ffd700" size="2x" className={showMenu ? "menu-icon" : ''} />
         </div>
     )
 }

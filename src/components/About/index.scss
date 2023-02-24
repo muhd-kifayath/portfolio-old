@@ -60,27 +60,27 @@
         }
 
         .face1 {
-            transform: translateZ(100px);
+            transform: translateZ(40px);
             color: #3c79a9;
           }
           .face2 {
-            transform: rotateY(90deg) translateZ(100px);
+            transform: rotateY(90deg) translateZ(40px);
             color: #ec2125;
           }
           .face3 {
-            transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+            transform: rotateY(90deg) rotateX(90deg) translateZ(40px);
             color: #3DDC84;
           }
           .face4 {
-            transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+            transform: rotateY(180deg) rotateZ(90deg) translateZ(40px);
             color: #5ed4f4;
           }
           .face5 {
-            transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+            transform: rotateY(-90deg) rotateZ(90deg) translateZ(40px);
             color: #efd81d;
           }
           .face6 {
-            transform: rotateX(-90deg) translateZ(100px);
+            transform: rotateX(-90deg) translateZ(40px);
             color: #ec4d28;
           }
         }
@@ -112,10 +112,11 @@
 @media screen and (max-width: 768px) {
   .about-page {
     position: relative;
-    height: 50%;
-
+    height: fit-content;
+    flex-direction: column;
+    
     .text-zone {
-      position: absolute;
+      position: relative;
       width: 80%;
       right: 10%;
       height: auto;
@@ -123,15 +124,25 @@
 
 
     .stage-cube-cont {
-      position: absolute;
-      width: 100%;
+      position: relative;
+      width: 60%;
       height: auto;
       top: auto;
       padding-top: auto;
-      right: 0;
+      right: 20%;
+      left: 20%;
       bottom: 10px;
       overflow: none;
 
+    }
+
+    .cubespinner {
+      transform-origin: 40px 40px 0 ;
+
+      div {
+        height: 80px;
+        width: 80px;
+      }
     }
   }
 }
