@@ -20,7 +20,8 @@ const Sidebar = () => {
                 <img className="sub-logo" src={LogoSub} alt="Muhd Kifayath" />
             </a>
             <nav className={showNav ? 'mobile-show' : ''}>
-                <a onClick={() => [setActiveNav('#'), setShowNav(false)]} className={activeNav === '#' ? 'active' : ''} href="#home" >
+                <FontAwesomeIcon onClick={() => [setShowNav(false), setShowMenu(true)]} icon={faClose} color="ffd700" size="3x" className="close-icon" />
+                <a onClick={() => [setActiveNav('#'), setShowNav(false)]} className={activeNav === '#' ? 'active' : ''} id="home-link" href="#home" >
                     <FontAwesomeIcon icon={faHome} color="#ffffff" />
                 </a>
                 <a href="#about" onClick={() => [setActiveNav('#about'), setShowNav(false)]} id="about-link" className={activeNav === '#about' ? 'active' : ''}>
@@ -29,9 +30,8 @@ const Sidebar = () => {
                 <a onClick={() => [setActiveNav('#contact'), setShowNav(false)]} id="contact-link" className={activeNav === '#contact' ? 'active' : ''} href="#contact" >
                     <FontAwesomeIcon icon={faEnvelope} color="#ffffff" />
                 </a>
-                <FontAwesomeIcon onClick={() => [setShowNav(false), setShowMenu(true)]} icon={faClose} color="ffd700" size="3x" className="close-icon" />
             </nav>
-            <div className={showMenu ? "menu-icon" : ''}>
+            <div className={showMenu ? "menu-icon" : "alt-menu"}>
                 <FontAwesomeIcon onClick={() => [setShowNav(true), setShowMenu(false)]} icon={faBars} color="#ffd700" size="2x" />
             </div>
             <ul>

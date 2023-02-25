@@ -50,14 +50,13 @@
     height: auto;
 
     .text-zone {
-        position: absolute;
-        left: 10%;
+        margin-left: 10%;
         transform: translateY(-50%);
         font-family: sans-serif;
         color: #ffd700;
         width: 35%;
         text-align: justify;
-        top: 40%;
+        margin-top: 20%;
         max-height: 90%;
     }
 
@@ -127,10 +126,10 @@
     }
 
     .contatiner {
-        position: initial;
+        position: relative;
         height: auto;
         min-height: auto;
-        margin-top: 5%;
+        margin-top: 10%;
     }
 
     .tags{
@@ -145,5 +144,12 @@
         &::after {
             display: none;
         }
+    }
+
+    .about-page, .contact-page {
+        position: initial;
+        transform: none;
+        box-sizing: border-box;
+
     }
 }
