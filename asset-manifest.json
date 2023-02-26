@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a9b89b6.css",
-    "main.js": "/static/js/main.181b64fe.js",
+    "main.css": "/static/css/main.25e31f62.css",
+    "main.js": "/static/js/main.96eff71e.js",
     "static/js/787.086d5f15.chunk.js": "/static/js/787.086d5f15.chunk.js",
     "static/media/logo-mk.png": "/static/media/logo-mk.a99abe98aed06d31d2f8.png",
     "static/media/cc.jpg": "/static/media/cc.755180ca104c4f5a17ca.jpg",
@@ -10,16 +10,16 @@
     "static/media/LaBelleAurore.woff": "/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
     "static/media/CoolveticaRg-Regular.woff": "/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
     "static/media/instagram.svg": "/static/media/instagram.8ff7ce92ad753b591ed4c1d03e84c026.svg",
+    "static/media/github.svg": "/static/media/github.945c7080a9934b4d8be986312f3d8d8f.svg",
     "static/media/twitter.svg": "/static/media/twitter.fe06d572bd13680e66f4d31fc7cf1832.svg",
     "index.html": "/index.html",
-    "static/media/github.svg": "/static/media/github.ddc17b60f7ebc908b67241cca683ca01.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.ada11cda991129bc91b79d2c7cee1066.svg",
-    "main.5a9b89b6.css.map": "/static/css/main.5a9b89b6.css.map",
-    "main.181b64fe.js.map": "/static/js/main.181b64fe.js.map",
+    "main.25e31f62.css.map": "/static/css/main.25e31f62.css.map",
+    "main.96eff71e.js.map": "/static/js/main.96eff71e.js.map",
     "787.086d5f15.chunk.js.map": "/static/js/787.086d5f15.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a9b89b6.css",
-    "static/js/main.181b64fe.js"
+    "static/css/main.25e31f62.css",
+    "static/js/main.96eff71e.js"
   ]
 }
