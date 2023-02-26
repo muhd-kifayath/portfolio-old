@@ -6,26 +6,26 @@
 
 .top-tags {
     height: 30px;
-    padding-top: 35px;
+    padding-top: 1vw;
     top: 0px;
 }
 
 .tags {
     width: 100%;
-    background: #1a1f29;
+    background: #151729;
     z-index: 3;
-    color: #ffd700;
+    color: #7DF9FF;
     opacity: 0.6;
     position: absolute;
     bottom: 0;
-    left: 120px;
+    padding-left: 8vw;
     font-family: "La Belle Aurore";
     font-size: 18px;
     opacity: 1;
 }
 
 .bottom-tag-html {
-    margin-left: -30px;
+    margin-left: -2vw;
 }
 
 .container {
@@ -45,15 +45,15 @@
 
 .about-page, .contact-page {
     display: flex;
-    position: relative;
     font-family: 'Coolvetica';
-    height: auto;
+    height: fit-content;
+    justify-content: space-between;
 
     .text-zone {
         margin-left: 10%;
         transform: translateY(-50%);
         font-family: sans-serif;
-        color: #ffd700;
+        color: #7DF9FF;
         width: 35%;
         text-align: justify;
         margin-top: 20%;
@@ -63,7 +63,7 @@
     h1 {
         font-size: 53px;
         font-family: "Coolvetica";
-        color: #ffd700;
+        color: #7DF9FF;
         font-weight: 400;
         line-height: 50px;
         margin-bottom: 40px;
@@ -71,7 +71,7 @@
         &::before {
             content: "<h1>";
             font-family: "La Belle Aurore";
-            color: #ffd700;
+            color: #7DF9FF;
             font-size: 18px;
             position: absolute;
             margin-top: -15px;
@@ -83,7 +83,7 @@
         &::after {
             content: "</h1>";
             font-family: "La Belle Aurore";
-            color: #ffd700;
+            color: #7DF9FF;
             font-size: 18px;
             position: absolute;
             left: -10px;
@@ -101,22 +101,24 @@
 }
 
 .flat-button {
-    color: #ffd700;
+    color: #7DF9FF;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 10px 18px;
-    border: 1px solid #ffd700;
+    border: 1px solid #7DF9FF;
     margin-top: 25px;
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
 
     &:hover {
-        background: #ffd700;
-        color: #333;
+        background: #7DF9FF;
+        color: #202529;
+        font-weight: 500;
+
     }
 }
 

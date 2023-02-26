@@ -28,10 +28,11 @@
     .stage-cube-cont {
         width: 50%;
         height: 100%;
-        top: 0;
+        float: right;
+
         padding-top: 13%;
         margin-left: 0;
-        right: 0;
+
         overflow: visible;
     }
 
@@ -50,12 +51,12 @@
             height: 200px;
             border-radius: 15px;
             border: 1px solid #ccc;
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(166, 211, 248, 0.6);
             font-size: 180px;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 0 15px 0 rgba(173, 216, 230, 0.8);
+            box-shadow: 0 0 23px 0 rgba(173, 216, 230, 0.8);
         }
 
         .face1 {
@@ -114,6 +115,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 25%;
+    justify-content: center;
     
     .text-zone {
       width: 80%;
@@ -129,10 +131,10 @@
       justify-content: center;
       position: static;
       max-height: 60%;
-      margin-top: -45%;
+      margin-top: -43%;
       padding-top: 0;
       margin-left: -25%;
-      bottom: 100px;
+      margin-bottom: 150px;
       overflow: visible;
 
     .cubespinner {

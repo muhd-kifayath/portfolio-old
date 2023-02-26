@@ -40,7 +40,7 @@ const Contact = () => {
                                 </a>
                             </li>
                             <li>
-                                <a target="_blank" rel="noreferrer" href="https://github.com/muhd-kifayath">
+                                <a target="_blank" rel="noreferrer" href="https://github.com/muhd-kifayath" className="github">
                                     <img src={GitHub} alt="" />
                                 </a>
                             </li>

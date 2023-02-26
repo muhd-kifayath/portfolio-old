@@ -32,7 +32,7 @@ const Sidebar = () => {
                 </a>
             </nav>
             <div className={showMenu ? "menu-icon" : "alt-menu"}>
-                <FontAwesomeIcon onClick={() => [setShowNav(true), setShowMenu(false)]} icon={faBars} color="#ffd700" size="2x" />
+                <FontAwesomeIcon onClick={() => [setShowNav(true), setShowMenu(false)]} icon={faBars} color="#7DF9FF" size="2x" />
             </div>
             <ul>
                 <li>

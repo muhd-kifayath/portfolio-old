@@ -1,5 +1,5 @@
 .nav-bar {
-    background: #000917;
+    background: #0D1821;
     width: 60px;
     height: 100%;
     position: absolute;
@@ -35,7 +35,7 @@
 
         a {
             font-size: 22px;
-            color: #4d4d4e;
+            color: #BFCC94;
             display: block;
             line-height: 51px;
             height: 51px;
@@ -47,7 +47,7 @@
             }
 
             &:hover {
-                color: #ffd700;
+                color: #7DF9FF;
 
                 svg {
                     opacity: 0;
@@ -122,14 +122,13 @@
                 display: block;
                 font-size: 15px;
                 line-height: 16px;
-                color: #4d4d4e;
-            }
-
-            &:hover {
-                .anchor-icon {
-                    color: #ffd700;
+                color: #BFCC94;
+                &:hover {
+                    color: #7DF9FF;
                 }
             }
+
+            
         }
     }
 }
@@ -146,7 +145,7 @@
 
         img {
             height: auto;
-            width: 8vw;
+            width: min(8vw,35px);
             
             &.sub-logo {
                 display: none;
